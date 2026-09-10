@@ -1,16 +1,16 @@
 # Maintainer: Christopher Sieh (stelzo) <stelzo@steado.de>
-# Template file — CI replaces 0.4.0 and ba492095ddb05da875685d1fda968c03cef970d4b1847b9469c534cfc965326e
+# Template file — CI replaces 0.5.0 and 5263e6e9d9ce583133a3dae2ae8514f2a63e8a83b14fcd8467e870d920697843
 # before publishing to the tap.
 class Marina < Formula
   desc "A dataset manager for robotics to organize, share, and discover datasets and metadata across storage backends."
   homepage "https://codeberg.org/stelzo/marina"
-  version "0.4.0"
+  version "0.5.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://uos-robotics.codeberg.page/ppa/bin/marina-#{version}-macos-arm64.tar.gz"
-      sha256 "ba492095ddb05da875685d1fda968c03cef970d4b1847b9469c534cfc965326e"
+      sha256 "5263e6e9d9ce583133a3dae2ae8514f2a63e8a83b14fcd8467e870d920697843"
     end
   end
 
