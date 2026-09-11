@@ -1,5 +1,5 @@
 # Maintainer: Christopher Sieh (stelzo) <stelzo@steado.de>
-# Template file — CI replaces 0.0.7, caba9740bdbf0c8f438b685f71c2b5e8242fb6b69cbe0c50ab57c9c92f146461,
+# Template file — CI replaces 0.0.7, 6450c7d75fb19e97a7dda7e4a851a747bd75f64d13f6aaab49ce77c4a7757c43,
 # before publishing to the tap.
 class Pelorus < Formula
   desc "Highly efficient Lidar Inertial Odometry"
@@ -10,7 +10,7 @@ class Pelorus < Formula
   on_macos do
     on_arm do
       url "https://uos-robotics.codeberg.page/ppa/bin/pelorus-#{version}-macos-arm64.tar.gz"
-      sha256 "caba9740bdbf0c8f438b685f71c2b5e8242fb6b69cbe0c50ab57c9c92f146461"
+      sha256 "6450c7d75fb19e97a7dda7e4a851a747bd75f64d13f6aaab49ce77c4a7757c43"
     end
   end
 
