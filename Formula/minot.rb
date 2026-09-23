@@ -1,15 +1,15 @@
 # Maintainer: stelzo <stelzo@steado.de>
-# Template file — CI replaces 0.11.2 and 7bd42240c90b547810fe702036d62a9c9e3ad300f5d5b532587fb0fe970a3d1d before publishing to the tap.
+# Template file — CI replaces 0.11.3 and 78b701b710d07615a5380492582e5ae6a02db730a5d0d2b6ef614ed96c0a0351 before publishing to the tap.
 class Minot < Formula
   desc "A versatile toolset for debugging and verifying stateful robot perception software"
   homepage "https://codeberg.org/stelzo/minot"
-  version "0.11.2"
+  version "0.11.3"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/minot-aarch64-apple-darwin.tar.gz"
-      sha256 "7bd42240c90b547810fe702036d62a9c9e3ad300f5d5b532587fb0fe970a3d1d"
+      sha256 "78b701b710d07615a5380492582e5ae6a02db730a5d0d2b6ef614ed96c0a0351"
     end
   end
 
