@@ -1,16 +1,20 @@
-# Maintainer: Christopher Sieh (stelzo) <stelzo@steado.de>
-# Template file — CI replaces 0.0.7, 6450c7d75fb19e97a7dda7e4a851a747bd75f64d13f6aaab49ce77c4a7757c43,
+# Maintainer: stelzo <stelzo@steado.de>
+# Template file — CI replaces 0.0.8, 94ad6dfba3034621855c3dae94e8d517dd51e356cb55363286d454970fd63c11,
 # before publishing to the tap.
 class Pelorus < Formula
   desc "Highly efficient Lidar Inertial Odometry"
   homepage "https://codeberg.org/stelzo/pelorus"
-  version "0.0.7"
+  version "0.0.8"
   license any_of: ["MIT", "Apache-2.0"]
+
+  depends_on "minot"
+  depends_on "dedrunk"
+  depends_on "marina"
 
   on_macos do
     on_arm do
-      url "https://uos-robotics.codeberg.page/ppa/bin/pelorus-#{version}-macos-arm64.tar.gz"
-      sha256 "6450c7d75fb19e97a7dda7e4a851a747bd75f64d13f6aaab49ce77c4a7757c43"
+      url "https://ppa.steado.tech/bin/pelorus-#{version}-macos-arm64.tar.gz"
+      sha256 "94ad6dfba3034621855c3dae94e8d517dd51e356cb55363286d454970fd63c11"
     end
   end
 
