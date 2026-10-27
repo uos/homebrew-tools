@@ -3,22 +3,22 @@
 class Minot < Formula
   desc "A versatile toolset for debugging and verifying stateful robot perception software"
   homepage "https://codeberg.org/stelzo/minot"
-  version "0.13.0"
+  version "0.14.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/minot-aarch64-apple-darwin"
-      sha256 "ded26d1e375d127cf71bdc12d24765a75418226790ca178a9b8ef3db12ad9d30"
+      sha256 "213e6f6ee5520220ee5457a238cdb8c5834443bbc54da8f5bbe99c51de94c238"
 
       resource "librat.a" do
         url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/librat-aarch64-apple-darwin.a"
-        sha256 "38720170b99a67514713ec5da516ae3b7671d350e7771010030d507c8483d77a"
+        sha256 "de617f7c6eb3539042e83de10ceabda19744ada9bde94f839cd2e0bdea844652"
       end
 
       resource "librat.dylib" do
         url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/librat-aarch64-apple-darwin.dylib"
-        sha256 "b7e4231d6ec30a801dbd0a62ea9cdca60a383f1ced01c02f2ed421a990b7b541"
+        sha256 "7efa06c27c5c664c91317e66f236041d81d2421de0a42003eed9e23d7f0bd268"
       end
     end
   end
@@ -35,7 +35,7 @@ class Minot < Formula
 
   resource "libratConfig.cmake" do
     url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/libratConfig.cmake"
-    sha256 "5f43f062c9b349da2a5cb22a48b43a27923a5eb71e0380715c4379475e29c309"
+    sha256 "996cb4a49da4df0f8fbce44d270a989ea40a1fe835729c9193d53c21aa7eb1ff"
   end
 
   def install
