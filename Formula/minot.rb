@@ -2,23 +2,23 @@
 # Template file. CI fills in the version and one checksum per downloaded file before publishing to the tap.
 class Minot < Formula
   desc "A versatile toolset for debugging and verifying stateful robot perception software"
-  homepage "https://codeberg.org/stelzo/minot"
-  version "0.14.0"
+  homepage "https://minot.steado.tech"
+  version "0.14.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/minot-aarch64-apple-darwin"
-      sha256 "213e6f6ee5520220ee5457a238cdb8c5834443bbc54da8f5bbe99c51de94c238"
+      sha256 "c20c04104767f704c7dd121223b44bd5670a891002792994e295de7dc5ce6a74"
 
       resource "librat.a" do
         url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/librat-aarch64-apple-darwin.a"
-        sha256 "de617f7c6eb3539042e83de10ceabda19744ada9bde94f839cd2e0bdea844652"
+        sha256 "067b98081b4a0b10868bb361155f9983cab5ccde6d516f61f043324a535eb9af"
       end
 
       resource "librat.dylib" do
         url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/librat-aarch64-apple-darwin.dylib"
-        sha256 "7efa06c27c5c664c91317e66f236041d81d2421de0a42003eed9e23d7f0bd268"
+        sha256 "657664fb4284d4cc513fd4787f7af645b7fd6164ae367b58e488245a9ae93e0d"
       end
     end
   end
@@ -35,7 +35,7 @@ class Minot < Formula
 
   resource "libratConfig.cmake" do
     url "https://codeberg.org/stelzo/minot/releases/download/v#{version}/libratConfig.cmake"
-    sha256 "996cb4a49da4df0f8fbce44d270a989ea40a1fe835729c9193d53c21aa7eb1ff"
+    sha256 "542a747ef1f6ae44e55787bc2a1e18abf4116750216e08340200f3bf7f5f7788"
   end
 
   def install
