@@ -8,11 +8,11 @@ class Ratslang < Formula
 
   on_macos do
     on_arm do
-      url "https://codeberg.org/stelzo/ratslang/releases/download/v#{version}/ratslang-aarch64-apple-darwin"
+      url "https://codeberg.org/stelzo/ratslang/releases/download/v0.5.0/ratslang-aarch64-apple-darwin"
       sha256 "3359ae7b78f40dbff6ae4ba4c7eaceee0be1fd8d3d9b3a25e1f3a2d3707a5361"
 
       resource "ratslang-lsp" do
-        url "https://codeberg.org/stelzo/ratslang/releases/download/v#{version}/ratslang-lsp-aarch64-apple-darwin"
+        url "https://codeberg.org/stelzo/ratslang/releases/download/v0.5.0/ratslang-lsp-aarch64-apple-darwin"
         sha256 "a892c4a72e5cdd5ba02d7df760e720ed21ea079f128de17b8138bad9fa980e3d"
       end
     end
