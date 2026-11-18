@@ -1,16 +1,16 @@
 # Maintainer: stelzo <stelzo@steado.de>
-# Template file — CI replaces 0.1.1 and 76ebd4d6134d137240b658aa7b55af43a6da2d07f2ee4ccc0c725cfc00dd96c0
+# Template file — CI replaces 0.2.0 and 6cb7aed8c301ea7019ec1e130dee1ee5b3d9c9536813f64299c7f1ae57d6cc42
 # before publishing to the tap.
 class Dedrunk < Formula
-  desc "Kalibr IMU calibration from MCAP recordings."
+  desc "Camera and IMU intrinsics and Lidar, camera and IMU extrinsics, with a GUI"
   homepage "https://codeberg.org/stelzo/dedrunk"
-  version "0.1.1"
+  version "0.2.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
       url "https://ppa.steado.tech/bin/dedrunk-#{version}-macos-arm64.tar.gz"
-      sha256 "76ebd4d6134d137240b658aa7b55af43a6da2d07f2ee4ccc0c725cfc00dd96c0"
+      sha256 "6cb7aed8c301ea7019ec1e130dee1ee5b3d9c9536813f64299c7f1ae57d6cc42"
     end
   end
 
